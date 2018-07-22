@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PrivMessenger:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PrivMessenger_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PrivMessenger/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PrivMessenger" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.googlecode.json-simple:json-simple:1.1.1" />
+          <element id="library" level="project" name="com.google.firebase:firebase-admin:6.2.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
