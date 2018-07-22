@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="java.util.Date"%>
-<%@page errorPage="//http://localhost:8086/PrivMessenger/log_in.jsp" %>
+<%@page errorPage="//http://localhost:8084/PrivMessenger/log_in.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
