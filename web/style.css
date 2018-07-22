@@ -1,0 +1,14 @@
+
+
+body{
+    background:#ecf0f1;
+}
+
+.container-main{
+    overflow:hidden;
+    width:320px;
+    margin:0px auto;
+    background:white;
+    border-radius: 5px;
+    display:block;
+}

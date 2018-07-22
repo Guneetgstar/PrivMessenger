@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <servlet>
+        <servlet-name>LogIn</servlet-name>
+        <servlet-class>com.LogIn</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Conversations</servlet-name>
+        <servlet-class>com.Conversations</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>com.SignUp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Messeges</servlet-name>
+        <servlet-class>com.Messeges</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewMsg</servlet-name>
+        <servlet-class>com.NewMsg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Test</servlet-name>
+        <servlet-class>test.Test</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Token</servlet-name>
+        <servlet-class>com.Token</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Find</servlet-name>
+        <servlet-class>com.Find</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Token</servlet-name>
+        <url-pattern>/Token</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogIn</servlet-name>
+        <url-pattern>/LogIn</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Conversations</servlet-name>
+        <url-pattern>/Conversations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/SignUp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Messeges</servlet-name>
+        <url-pattern>/Messeges</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewMsg</servlet-name>
+        <url-pattern>/NewMsg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Test</servlet-name>
+        <url-pattern>/Test</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Find</servlet-name>
+        <url-pattern>/Find</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+</web-app>
