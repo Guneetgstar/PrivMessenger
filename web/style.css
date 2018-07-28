@@ -2,13 +2,35 @@
 
 body{
     background:#ecf0f1;
+    transition:0.3s ease-in-out;
+}
+#abc{
+    height: 320px;
+    position: relative;
+}
+#over{
+    height:640px;
 }
 
 .container-main{
-    overflow:hidden;
     width:320px;
     margin:0px auto;
     background:white;
     border-radius: 5px;
     display:block;
+}
+#invisible{
+    display:block;
+    display: none;
+    background: #448b24;
+    padding: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 332px;
+    height: 320px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
 }
