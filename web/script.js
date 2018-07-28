@@ -3,6 +3,7 @@
 $(function(){
 
     $('#myForm').ajaxForm({
+
         beforeSend:function(){
             $(".progress").show();
         },
@@ -18,6 +19,7 @@ $(function(){
                 $(".image").html("Error");
             else if(response.statusCode=='200')
                 $(".image").html("Success");
+            $("#over").css("margin-top","0px");
 
         }
     });

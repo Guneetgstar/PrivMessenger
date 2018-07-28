@@ -5,14 +5,26 @@ body{
     transition:0.3s ease-in-out;
 }
 #abc{
+    overflow: hidden;
     height: 320px;
     position: relative;
 }
 #over{
     height:640px;
+    margin-top: -320px;
+    transition: 0.5s ease-in-out;
 }
+#over .mine{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 320px;
+    height: 320px;
 
+}
 .container-main{
+    height:320px;
     width:320px;
     margin:0px auto;
     background:white;
@@ -20,17 +32,8 @@ body{
     display:block;
 }
 #invisible{
-    display:block;
-    display: none;
+    padding:4px 10px;
     background: #448b24;
-    padding: 10px;
-    padding: 20px;
-    margin-bottom: 50px;
-    width: 332px;
-    height: 320px;
     border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
 
 }
