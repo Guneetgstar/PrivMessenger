@@ -17,14 +17,11 @@
 </head>
 <body>
 <div id="abc">
-<div id="over">
-  <div class="mine">
-    <div id="invisible">
-        <img src="https://thumbs.gfycat.com/EasygoingWastefulIridescentshark-size_restricted.gif"
-        style="height: 20px; width: 20px">
-    jhfbakhflhfvbalisuafhlisfuhlzkc
-    </div>
+
+  <div class="xyz">
+    <img src="checked.png" width="50%" alt="" />
   </div>
+
 <div class="container-main">
   <form action="upload.jsp" method="post" id="myForm" style="padding:20px;"
         enctype="multipart/form-data">
@@ -39,7 +36,6 @@
     </div>
   </div>
   <div class="image"></div>
-</div>
 </div>
 </div>
 </body>

@@ -51,13 +51,10 @@ public class LogIn extends HttpServlet {
             if (rs.first()) {
                 Date date=new Date(System.currentTimeMillis());
                 System.out.println(rs.getString(1)+"<-"+rs.getString(2)+date.toString());
-
                 response.setStatus(HttpServletResponse.SC_OK);
-                Cookie e_mail = new Cookie("email", uname);
-                
+                Cookie e_mail = new Cookie("email", rs.getString(1));
                 e_mail.setMaxAge(60 * 60 * 60 * 24 * 365);
-                Cookie pass = new Cookie("pw", password);
-               
+                Cookie pass = new Cookie("pw", rs.getString(2));
                 pass.setMaxAge(60 * 60 * 60 * 24 * 365);
                 response.addCookie(e_mail);
                 response.addCookie(pass);
@@ -70,15 +67,12 @@ public class LogIn extends HttpServlet {
                 response.setStatus(HttpServletResponse.SC_NO_CONTENT);
                 out.print("not found");
             }
-
         } catch (SQLException e) {
             out.print("not found" + e);
         }
     }
-
     }
 
-   
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

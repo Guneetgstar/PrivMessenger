@@ -101,7 +101,6 @@ public class Utils {
         catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
     public static String findToken(String receiver){
         Connection con=Utils.getConnection();

@@ -12,18 +12,17 @@ $(function(){
             $(".sr-only").html(percentComplete+'%');
         },
         success:function(){
-            $(".progress").hide();
+
         },
         complete:function(response){
-            if(response.statusCode=='204')
+            if(response.status=='204')
                 $(".image").html("Error");
-            else if(response.statusCode=='200')
+            else if(response.status=='200')
                 $(".image").html("Success");
-            $("#over").css("margin-top","0px");
+            $(".container-main").fadeOut().hide();
+            $(".xyz img").css("transform","scale(1)");
+            $(".xyz img").addClass("animate");
 
         }
     });
-
-
-    $(".progress").hide();
 });
